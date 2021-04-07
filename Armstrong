@@ -1,0 +1,26 @@
+using System;
+					
+public class Armstrong
+{
+	public static void Main()
+	{
+		  	int num, r, temp, sum =0;
+            Console.WriteLine("Enter the number to find whether number is Armstrong or or not:");
+            num = Convert.ToInt32(Console.ReadLine());
+			temp = num;
+			while(num>0)
+			{
+				r = num %  10 ;
+				sum = sum + (r*r*r);
+				num = num /10;
+			}
+		if(sum == temp)
+		{
+			Console.WriteLine(temp +" is Armstrong");
+		}
+		else
+		{
+			Console.WriteLine(temp + " is not Armstrong");
+		}
+	}
+}
