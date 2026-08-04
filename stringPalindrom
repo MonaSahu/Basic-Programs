@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string str = "MADAMa";
+		string reverse = "";
+		for(int i = str.Length-1; i>=0 ; i--)
+		{
+			reverse += str[i];
+		}
+		if(str== reverse)
+		{
+			Console.WriteLine("Given String is Palindrome");
+		}
+		else
+		{
+			Console.WriteLine("Given String is not a Palindrome");
+		}
+		
+	}
+}
